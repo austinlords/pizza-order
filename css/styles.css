@@ -1,13 +1,8 @@
-.shoe-pic {
-  max-width: 150px;
-  height: auto;
-}
-
 .title {
   background-color: #5f7;
 }
 
-.initially-hidden {
+.initiallyHidden {
   display: none;
 }
 
@@ -35,4 +30,8 @@
   border: 2px solid skyblue;
   border-radius: 5px;
   box-shadow: 3px 3px 10px #449;
+}
+
+#receipt {
+  max-width: 600px;
 }

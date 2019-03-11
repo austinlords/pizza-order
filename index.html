@@ -4,60 +4,20 @@
     <meta charset="utf-8">
     <title>Pizza!</title>
     <link rel='icon' href='./images/pizza-icon.png'>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src='./js/scripts.js'></script>
   </head>
-<!-----------INSTRUCTIONS ----------------
-Radio buttons for a size selection:
-➤ Personal, Medium, Large, and Extra Large
-
-Check boxes for multiple selection of meats:
-➤ Pepperoni, Sausage, Canadian Bacon, Ground Beef, Anchovy, and Chicken
-
-Radio buttons for a cheese selection:
-➤ Regular, No cheese, Extra Cheese
-
-Radio buttons for a crust selection:
-➤ Plain Crust, Garlic Butter Crust, Cheese Stuffed Crust, Spicy Crust, and House Special Crust
-
-Radio buttons for a sauce selection:
-➤ Marinara sauce, White sauce, Barbeque sauce, and No Sauce
-
-Check boxes for multiple selection of veggies:
-➤ Tomatoes, Onions, Olives, Green Peppers, Mushrooms, Pineapple, Spinach, and Jalapeno
-
-BASE PIZZA PRICE BEFORE INGREDIENT MODIFICATIONS:
-➤ Personal pizza = $6.00
-➤ Medium pizza = $10.00
-➤ Large pizza = $14.00
-➤ XLarge pizza = $16.00
-
-INGREDIENT MODIFIER PRICING:
-The following ingredients if selected will be added to the base pizza price:
-
-Additional Meat items (first one is complementary):
-➤ +$1.00 each additional meat items beyond the first complementary meat item
-
-Additional Veggie items (first one is complementary):
-➤ +$1.00 each additional veggie items beyond the first complementary veggie item
-
-Extra Cheese:
-➤ +$3.00 for any size pizza
-
-Crust:
-➤ +$3.00 for Cheese Stuffed Crust. All other crusts are complementary
----------------/INSTRUCTIONS----------------->
 
   <body>
-    <!--ENTIRE BODY-->
+    <!--ENTIRE CONTAINER-->
     <div class="container bg-light">
       <h1 class="py-3 text-center title">Pizza Order Form</h1>
-      <h3 class="mt-3 mb-3 p-2">Please select SIZE:</h3>
 
-      <form>
+      <form class='my-5'>
         <!--------PIZZA SIZE--------------------
         Radio buttons for a size selection:
         Personal, Medium, Large, and Extra Large
@@ -123,7 +83,7 @@ Crust:
           Ground Beef, Anchovy, and Chicken
           -------------------------------------------->
           <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
-            <h5>MEAT(s):</h5>
+            <h5>MEAT(s)</h5>
             <p>1 topping included, $1.00 for each additional meat.</p>
             <hr>
             <div class="form-check">
@@ -171,7 +131,7 @@ Crust:
           Pineapple, Spinach, and Jalapeno
           --------------------------------------------->
           <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
-            <h5>VEGGIE(s):</h5>
+            <h5>VEGGIE(s)</h5>
             <p>1 topping included, $1.00 for each additional veggie.</p>
             <hr>
             <div class="form-check">
@@ -230,173 +190,152 @@ Crust:
           Regular, No cheese, Extra Cheese
           ------------------------------------------>
           <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
-              <h5>CHEESE</h5>
-              <p>Select from choices below.</p>
-              <hr>
-              <div class="form-check">
-                <input class="form-check-input" name='cheeseRadio' type="radio" value="" id="regularCheese">
-                <label class="form-check-label" for="regularCheese">
-                  Regular Cheese
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" name='cheeseRadio' type="radio" value="" id="noCheese">
-                <label class="form-check-label" for="noCheese">
-                  No Cheese
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" name='cheeseRadio' type="radio" value="" id="extraCheese">
-                <label class="form-check-label" for="extraCheese">
-                  Extra Cheese ($3)
-                </label>
-              </div>
+            <h5>CHEESE</h5>
+            <p>Select from choices below.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="" id="regularCheese">
+              <label class="form-check-label" for="regularCheese">
+                Regular Cheese
+              </label>
             </div>
+            <div class="form-check">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="" id="noCheese">
+              <label class="form-check-label" for="noCheese">
+                No Cheese
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="" id="extraCheese">
+              <label class="form-check-label" for="extraCheese">
+                Extra Cheese ($3)
+              </label>
+            </div>
+          </div>
+          <!------------------/CHEESE--------------->
 
+          <!------------------CRUST------------------
+          Radio buttons for a crust selection:
+          Plain Crust, Garlic Butter Crust, Cheese Stuffed Crust, 
+          Spicy Crust, and House Special Crust
+          ------------------------------------------->
+          <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
+            <h5>CRUST</h5>
+            <p>Select from choices below.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="" id="plainCrust">
+              <label class="form-check-label" for="plainCrust">
+                Plain Crust
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="" id="garlicCrust">
+              <label class="form-check-label" for="garlicCrust">
+                Garlic Butter Crust
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="" id="cheeseCrust">
+              <label class="form-check-label" for="cheeseCrust">
+                Cheese Stuffed Crust ($3)
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="" id="spicyCrust">
+              <label class="form-check-label" for="spicyCrust">
+                Spicy Crust
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="" id="houseCrust">
+              <label class="form-check-label" for="houseCrust">
+                House Special Crust
+              </label>
+            </div>
+          </div>
+          <!----------------/CRUST------------>
+          
+          <!---------------SAUCE----------------
+          Radio buttons for a sauce selection:
+          Marinara sauce, White sauce, Barbeque sauce, and No Sauce
+          ------------------------------------->
+          <div class='customizeBox col-xl-3 col-lg-4 col-md-5 p-3 m-3'>
+            <h5>SAUCE</h5>
+            <p>Select from choices below.</p>
+            <hr>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="" id="marinara">
+              <label class="form-check-label" for="marinara">
+                Marinara
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="" id="whiteSauce">
+              <label class="form-check-label" for="whiteSauce">
+                White Sauce
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="" id="bbqSauce">
+              <label class="form-check-label" for="bbqSauce">
+                Barbeque
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" name='crustRadio' type="radio" value="" id="noSauce">
+              <label class="form-check-label" for="noSauce">
+                No Sauce
+              </label>
+            </div>
+          </div>
+          <!------------------/SAUCE-------------->
 
         </div>
         <!--/CUSTOMIZE-->
 
+        <!--BUTTONS-->
+        <div class='row'>
+          <div class='col text-center mb-5'>
+            <button class='btn btn-primary' type=submit>Submit Order</button>
+            <button class='btn btn-danger' type="reset">Reset</button>
+          </div>
+        </div>
+        <!--/BUTTONS-->
       </form>
       <!--/FORM-->
-          
-        
-    <!--/PIZZA SIZE-->
-      <div class="row">  <!-- form to enter order details -->
-        <div id="orderDetails" class="col-xl-5 col-lg-6 col-md-8 col-sm-10 initially-hidden">
-          <h3 class="mb-4">ORDER DETAILS:</h3>
-          <form id="orderDetails">
-            <div class="form-group"> <!-- select shoe size -->
-              <label for="shoeSize">Select shoe size (Men's USA)</label>
-              <select class="form-control" id="shoeSize" required>
-                <option value=""selected disabled hidden>Select Size</option>
-                <option>6</option>
-                <option>6.5</option>
-                <option>7</option>
-                <option>7.5</option>
-                <option>8</option>
-                <option>8.5</option>
-                <option>9</option>
-                <option>9.5</option>
-                <option>10</option>
-                <option>10.5</option>
-                <option>11</option>
-                <option>11.5</option>
-                <option>12</option>
-                <option>12.5</option>
-                <option>13</option>
-                <option>14</option>
-              </select>
+
+      <!------------RECEIPT--------->
+      <div id='receipt' class='row initiallyHidden'>
+        <div class='col'>
+          <h3>Order Received!</h3>
+          <p>This is your receipt.</p>
+          <hr>
+          <div class='row'>
+            <div class='col-6 p-3'>
+              <p id='pizzaSelection'></p>
+              <p id='crustSelection'></p>
+              <p id='cheeseSelection'></p>
+              <p id='sauceSelection'></p>
+              <p id='meatSelection'></p>
+              <p id='veggieSelection'></p>
+              <p id='total'>Total:</p>
             </div>
-            <div class="form-group"> <!-- enter full name -->
-              <label for="fullName">Full Name</label>
-              <input id="fullName" type="name" class="form-control"  placeholder="Full name" required>
+            <div class='col-6 p-3'>
+              <p id='pizzaCost'></p>
+              <p id='crustCost'></p>
+              <p id='cheeseCost'></p>
+              <p id='sauceCost'></p>
+              <p id='meatCost'></p>
+              <p id='veggieCost'></p>
+              <p id='totalCost'></p>
             </div>
-            <div class="form-group"> <!-- enter email address -->
-              <label for="emailAddress">Email Address</label>
-              <input id="emailAddress" type="email" class="form-control"  placeholder="Your email address" required>
-            </div>
-            <p>*<i>You will be emailed a payment link to complete transaction.</i></p>
-            <div class="form-group"> <!-- enter address line 1 -->
-              <label class="control-label" for="address1">Address Line 1</label>
-              <input id="address1" type="text" placeholder="Street Address" class="form-control" required>
-            </div>
-            <div class="form-group"> <!-- enter address line 2 -->
-              <label class="control-label" for="address2">Address Line 2</label>
-              <input id="address2" type="text" placeholder="Apt, Suite, etc." class="form-control">
-            </div>
-            <div class="form-group"> <!-- enter city -->
-              <label class="control-label" for="city">City</label>
-              <input id="city" type="text" placeholder="City" class="form-control" required>
-            </div>
-            <div class="form-group"> <!-- select state -->
-              <div class="row">
-                <div class="col-4">
-                  <label class="control-label" for="state">State</label>
-                  <select id="state" type="text" placeholder="State" class="form-control" required >
-                    <option value=""selected disabled hidden>Select</option>
-                  	<option value="AL">AL</option>
-                  	<option value="AK">AK</option>
-                  	<option value="AR">AR</option>
-                  	<option value="AZ">AZ</option>
-                  	<option value="CA">CA</option>
-                  	<option value="CO">CO</option>
-                  	<option value="CT">CT</option>
-                  	<option value="DC">DC</option>
-                  	<option value="DE">DE</option>
-                  	<option value="FL">FL</option>
-                  	<option value="GA">GA</option>
-                  	<option value="HI">HI</option>
-                  	<option value="IA">IA</option>
-                  	<option value="ID">ID</option>
-                  	<option value="IL">IL</option>
-                  	<option value="IN">IN</option>
-                  	<option value="KS">KS</option>
-                  	<option value="KY">KY</option>
-                  	<option value="LA">LA</option>
-                  	<option value="MA">MA</option>
-                  	<option value="MD">MD</option>
-                  	<option value="ME">ME</option>
-                  	<option value="MI">MI</option>
-                  	<option value="MN">MN</option>
-                  	<option value="MO">MO</option>
-                  	<option value="MS">MS</option>
-                  	<option value="MT">MT</option>
-                  	<option value="NC">NC</option>
-                  	<option value="NE">NE</option>
-                  	<option value="NH">NH</option>
-                  	<option value="NJ">NJ</option>
-                  	<option value="NM">NM</option>
-                  	<option value="NV">NV</option>
-                  	<option value="NY">NY</option>
-                  	<option value="ND">ND</option>
-                  	<option value="OH">OH</option>
-                  	<option value="OK">OK</option>
-                  	<option value="OR">OR</option>
-                  	<option value="PA">PA</option>
-                  	<option value="RI">RI</option>
-                  	<option value="SC">SC</option>
-                  	<option value="SD">SD</option>
-                  	<option value="TN">TN</option>
-                  	<option value="TX">TX</option>
-                  	<option value="UT">UT</option>
-                  	<option value="VT">VT</option>
-                  	<option value="VA">VA</option>
-                  	<option value="WA">WA</option>
-                  	<option value="WI">WI</option>
-                  	<option value="WV">WV</option>
-                  	<option value="WY">WY</option>
-                  </select>
-                </div>
-                <div class="col-6">
-                  <label class="control-label" for="zipCode">Zip Code</label>
-                  <input id="zipCode" type="number" placeholder="Zip Code" class="form-control" required>
-                </div>
-              </div>
-            </div>
-            <div class="form-group"> <!-- submit button -->
-              <div class="pull-right">
-                <button type="submit" class="btn btn-primary">Submit Order</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div id="receipt" class="col-md-4 ml-auto initially-hidden"> <!-- receipt section -->
-          <h3 class="mb-4">RECEIPT:</h3>
-          <p>Order sent! <i>This is your receipt</i>. You will soon receive an email with the payment link to complete the order.</p>
-          <div class="mt-4 pl-3">
-            <div class="address">
-              <div id="receiptName" class="font-weight-bold"></div>
-              <div id="receiptAddress1"></div>
-              <div id="receiptAddress2"></div>
-              <span id="receiptCity"></span><span id="receiptState"></span><span id="receiptZipCode"></span>
-            </div>
-            <p class="mt-2">Your email address: <i><span id="receiptEmailAddress"></span></i></p>
-            <p class="mt-5">Shoe size: <span id="receiptShoeSize"></span> (Men's USA)</p>
-            <p class="font-weight-bold mt-3">Total: $<span id="receiptTotal"></span></p>
           </div>
         </div>
       </div>
+      <!----------/RECEIPT------->
+          
     </div>
+    <!--/ENTIRE CONTAINER-->
   </body>
 </html>
