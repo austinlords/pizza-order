@@ -1,0 +1,38 @@
+.shoe-pic {
+  max-width: 150px;
+  height: auto;
+}
+
+.title {
+  background-color: #5f7;
+}
+
+.initially-hidden {
+  display: none;
+}
+
+.largerText {
+  font-size: 20px;
+}
+
+#personalPic {
+  width: 8vw;
+}
+
+#mediumPic {
+  width: 10vw;
+}
+
+#largePic {
+  width: 12vw;
+}
+
+#xlargePic {
+  width: 13vw;
+}
+
+.customizeBox {
+  border: 2px solid skyblue;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #449;
+}
