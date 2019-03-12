@@ -6,7 +6,7 @@
     <link rel='icon' href='./images/pizza-icon.png'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
     <link rel="stylesheet" href="css/styles.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src='./js/scripts.js'></script>
@@ -15,10 +15,13 @@
   <body>
     <!--ENTIRE CONTAINER-->
     <div class="container bg-light">
-      <h1 class="py-3 text-center title">Pizza Order Form</h1>
+      <div class='title'>
+        <h1>Pizza Order Form</h1>
+      </div>
+      
 
       <form class='my-5'>
-        <!--------PIZZA SIZE--------------------
+        <!--------PIZZA SIZE------------
         Radio buttons for a size selection:
         Personal, Medium, Large, and Extra Large
         --------------------------------------->
@@ -27,7 +30,7 @@
           <!--PERSONAL-->
           <div class="col-3 text-center">
             <div class="custom-control custom-radio">
-              <input class="custom-control-input" type="radio" name="selectSize" id="personal" value="personal">
+              <input class="custom-control-input" type="radio" name="selectSize" id="personal" value="Personal" required>
               <label class="custom-control-label" for="personal">
                 <img id='personalPic' class='img-fluid' src='./images/pizza-clipart.png' alt='personal size pizza, $6.00'>
                 <div>Personal ($6.00)</div>
@@ -39,7 +42,7 @@
           <!--MEDIUM-->
           <div class="col-3 text-center">
             <div class="custom-control custom-radio">
-              <input class="custom-control-input" type="radio" name="selectSize" id="medium" value="medium">
+              <input class="custom-control-input" type="radio" name="selectSize" id="medium" value="Medium">
               <label class="custom-control-label" for="medium">
                 <img id='mediumPic' class='img-fluid' src='./images/pizza-clipart.png' alt='medium size pizza, $10.00'>
                 <div>Medium ($10.00)</div>
@@ -51,7 +54,7 @@
           <!--LARGE-->
           <div class="col-3 text-center">
             <div class="custom-control custom-radio">
-              <input class="custom-control-input" type="radio" name="selectSize" id="large" value="large">
+              <input class="custom-control-input" type="radio" name="selectSize" id="large" value="Large">
               <label class="custom-control-label" for="large">
                 <img id='largePic' class='img-fluid' src='./images/pizza-clipart.png' alt='large size pizza, $14.00'>
                 <div>Large ($14.00)</div>
@@ -63,7 +66,7 @@
           <!--X LARGE-->
           <div class="col-3 text-center">
             <div class="custom-control custom-radio">
-              <input class="custom-control-input" type="radio" name="selectSize" id="xlarge" value="xlarge">
+              <input class="custom-control-input" type="radio" name="selectSize" id="xlarge" value="X-Large">
               <label class="custom-control-label" for="xlarge">
                 <img id='xlargePic' class='img-fluid' src='./images/pizza-clipart.png' alt='xlarge size pizza, $16.00'>
                 <div>X-Large ($16.00)</div>
@@ -87,37 +90,37 @@
             <p>1 topping included, $1.00 for each additional meat.</p>
             <hr>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="pepperoni">
+              <input class="form-check-input meat" type="checkbox" value="Pepperoni" id="pepperoni">
               <label class="form-check-label" for="pepperoni">
                 Pepperoni
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="sausage">
+              <input class="form-check-input meat" type="checkbox" value="Sausage" id="sausage">
               <label class="form-check-label" for="sausage">
                 Sausage
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="canadianBacon">
+              <input class="form-check-input meat" type="checkbox" value='Canadian Bacon' id="canadianBacon">
               <label class="form-check-label" for="canadianBacon">
                 Canadian Bacon
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="groundBeef">
+              <input class="form-check-input meat" type="checkbox" value="Ground Beef" id="groundBeef">
               <label class="form-check-label" for="groundBeef">
                 Ground Beef
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="anchovy">
+              <input class="form-check-input meat" type="checkbox" value="Anchovy" id="anchovy">
               <label class="form-check-label" for="anchovy">
                 Anchovy
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="chicken">
+              <input class="form-check-input meat" type="checkbox" value="Chicken" id="chicken">
               <label class="form-check-label" for="chicken">
                 Chicken
               </label>
@@ -135,49 +138,49 @@
             <p>1 topping included, $1.00 for each additional veggie.</p>
             <hr>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="tomatoes">
+              <input class="form-check-input veggie" type="checkbox" value="Tomatoes" id="tomatoes">
               <label class="form-check-label" for="tomatoes">
                 Tomatoes
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="onions">
+              <input class="form-check-input veggie" type="checkbox" value="Onions" id="onions">
               <label class="form-check-label" for="onions">
                 Onions
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="olives">
+              <input class="form-check-input veggie" type="checkbox" value="Olives" id="olives">
               <label class="form-check-label" for="olives">
                 Olives
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="greenPeppers">
+              <input class="form-check-input veggie" type="checkbox" value="Green Peppers" id="greenPeppers">
               <label class="form-check-label" for="greenPeppers">
                 Green Peppers
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="mushrooms">
+              <input class="form-check-input veggie" type="checkbox" value="Mushrooms" id="mushrooms">
               <label class="form-check-label" for="mushrooms">
                 Mushrooms
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="pineapple">
+              <input class="form-check-input veggie" type="checkbox" value="Pineapple" id="pineapple">
               <label class="form-check-label" for="pineapple">
                 Pineapple
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="spinach">
+              <input class="form-check-input veggie" type="checkbox" value="Spinach" id="spinach">
               <label class="form-check-label" for="spinach">
                 Spinach
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="jalapeno">
+              <input class="form-check-input veggie" type="checkbox" value="Jalapeno" id="jalapeno">
               <label class="form-check-label" for="jalapeno">
                 Jalapeno
               </label>
@@ -194,19 +197,19 @@
             <p>Select from choices below.</p>
             <hr>
             <div class="form-check">
-              <input class="form-check-input" name='cheeseRadio' type="radio" value="" id="regularCheese">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="Regular Cheese" id="regularCheese" checked>
               <label class="form-check-label" for="regularCheese">
                 Regular Cheese
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" name='cheeseRadio' type="radio" value="" id="noCheese">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="No Cheese" id="noCheese">
               <label class="form-check-label" for="noCheese">
                 No Cheese
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" name='cheeseRadio' type="radio" value="" id="extraCheese">
+              <input class="form-check-input" name='cheeseRadio' type="radio" value="Extra Cheese" id="extraCheese">
               <label class="form-check-label" for="extraCheese">
                 Extra Cheese ($3)
               </label>
@@ -224,31 +227,31 @@
             <p>Select from choices below.</p>
             <hr>
             <div class="form-check">
-              <input class="form-check-input" name='crustRadio' type="radio" value="" id="plainCrust">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Plain Crust" id="plainCrust" checked>
               <label class="form-check-label" for="plainCrust">
                 Plain Crust
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" name='crustRadio' type="radio" value="" id="garlicCrust">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Garlic Butter Crust" id="garlicCrust">
               <label class="form-check-label" for="garlicCrust">
                 Garlic Butter Crust
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" name='crustRadio' type="radio" value="" id="cheeseCrust">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Cheese Stuffed Crust" id="cheeseCrust">
               <label class="form-check-label" for="cheeseCrust">
                 Cheese Stuffed Crust ($3)
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" name='crustRadio' type="radio" value="" id="spicyCrust">
+              <input class="form-check-input" name='crustRadio' type="radio" value="Spicy Crust" id="spicyCrust">
               <label class="form-check-label" for="spicyCrust">
                 Spicy Crust
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" name='crustRadio' type="radio" value="" id="houseCrust">
+              <input class="form-check-input" name='crustRadio' type="radio" value="House Special Crust" id="houseCrust">
               <label class="form-check-label" for="houseCrust">
                 House Special Crust
               </label>
@@ -265,25 +268,25 @@
             <p>Select from choices below.</p>
             <hr>
             <div class="form-check">
-              <input class="form-check-input" name='crustRadio' type="radio" value="" id="marinara">
+              <input class="form-check-input" name='sauceRadio' type="radio" value="Marinara" id="marinara" checked>
               <label class="form-check-label" for="marinara">
                 Marinara
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" name='crustRadio' type="radio" value="" id="whiteSauce">
+              <input class="form-check-input" name='sauceRadio' type="radio" value="White Sauce" id="whiteSauce">
               <label class="form-check-label" for="whiteSauce">
                 White Sauce
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" name='crustRadio' type="radio" value="" id="bbqSauce">
+              <input class="form-check-input" name='sauceRadio' type="radio" value="Barbeque" id="bbqSauce">
               <label class="form-check-label" for="bbqSauce">
                 Barbeque
               </label>
             </div>
             <div class="form-check">
-              <input class="form-check-input" name='crustRadio' type="radio" value="" id="noSauce">
+              <input class="form-check-input" name='sauceRadio' type="radio" value="No Sauce" id="noSauce">
               <label class="form-check-label" for="noSauce">
                 No Sauce
               </label>
@@ -306,35 +309,90 @@
       <!--/FORM-->
 
       <!------------RECEIPT--------->
-      <div id='receipt' class='row initiallyHidden'>
+      <div id='receipt' class='row'>
         <div class='col'>
           <h3>Order Received!</h3>
           <p>This is your receipt.</p>
           <hr>
           <div class='row'>
-            <div class='col-6 p-3'>
-              <p id='pizzaSelection'></p>
-              <p id='crustSelection'></p>
-              <p id='cheeseSelection'></p>
-              <p id='sauceSelection'></p>
-              <p id='meatSelection'></p>
-              <p id='veggieSelection'></p>
-              <p id='total'>Total:</p>
-            </div>
-            <div class='col-6 p-3'>
-              <p id='pizzaCost'></p>
-              <p id='crustCost'></p>
-              <p id='cheeseCost'></p>
-              <p id='sauceCost'></p>
-              <p id='meatCost'></p>
-              <p id='veggieCost'></p>
-              <p id='totalCost'></p>
+            <div class='col p-3'>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Size:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='sizeSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='sizeCost'></span>
+                </div>
+              </div>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Crust:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='crustSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='crustCost'></span>
+                </div>
+              </div>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Cheese:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='cheeseSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='cheeseCost'></span>
+                </div>
+              </div>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Sauce:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='sauceSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='sauceCost'></span>
+                </div>
+              </div>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Meat:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='meatSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='meatCost'></span>
+                </div>
+              </div>
+              <div class='row receiptRow'>
+                <div class='col-3'>
+                  Veggie:
+                </div>
+                <div class='col-7'>
+                  <span class='ingredients' id='veggieSelection'></span>
+                </div>
+                <div class='col-2 text-right'>
+                  <span class='costs' id='veggieCost'></span>
+                </div>
+              </div>
+              <div class='row' id='total'>
+                <div class='col'>
+                  TOTAL: <span class='costs'>$<span id='totalCost'></span>.00</span>
+                </div>
+              </div> 
             </div>
           </div>
         </div>
       </div>
       <!----------/RECEIPT------->
-          
+      <button id='orderAgain' class='btn btn-primary'>Order Again!</button>
     </div>
     <!--/ENTIRE CONTAINER-->
   </body>

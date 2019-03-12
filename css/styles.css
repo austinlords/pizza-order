@@ -1,9 +1,19 @@
 .title {
-  background-color: #5f7;
+  background-color: rgb(166, 226, 250);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  z-index: 100;
+  box-shadow: 0 5px 10px 1px #222;
 }
 
-.initiallyHidden {
-  display: none;
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .largerText {
@@ -27,11 +37,54 @@
 }
 
 .customizeBox {
-  border: 2px solid skyblue;
+  border: 1px solid skyblue;
   border-radius: 5px;
-  box-shadow: 3px 3px 10px #449;
+  box-shadow: 3px 3px 10px 3px skyblue;
+  background-color: white;
 }
 
 #receipt {
-  max-width: 600px;
+  width: 400px;
+  display: none;
+  border: 1px double skyblue;
+  border-radius: 10px;
+  padding: 20px 10px;
+  margin: 0 auto 50px auto;
+  background-color: #ddd;
+  box-shadow: 5px 5px 15px #333;
+}
+
+.container {
+  padding: 30px;
+  position: relative;
+  top: 100px;
+}
+
+.ingredients {
+  color: darkblue;
+  font-style: oblique;
+  font-size: 85%;
+}
+
+.receiptRow {
+  margin: 10px 0px;
+  border-bottom: 1px dashed skyblue;
+}
+
+.costs {
+  position: absolute;
+  right: 15px;
+}
+
+#total {
+  font-weight: bolder;
+  padding: 10px;
+  margin-top: 30px;
+  border-top: 1px dotted grey;
+  border-bottom: 1px dotted grey;
+}
+
+#orderAgain {
+  margin: auto;
+  display: none;
 }
